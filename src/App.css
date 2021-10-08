@@ -347,3 +347,9 @@ footer {
       #volume {
           margin-left: -80px;
       }
+
+
+      /* my api cards */
+      .fetched{
+        padding-left: 10%;
+      }

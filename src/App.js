@@ -1,13 +1,25 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import Sidebar from './component/Sidebar';
+
 import Homepage from './component/Homepage';
+import { BrowserRouter as Router, Route} from 'react-router-dom'
+import Albumpage from './component/Albumpage';
+
 
 
 function App() {
   return (
     <div className="App">
-      <Homepage/>
+     
+      <Router>
+      
+        
+        
+        <Route path="/" exact component={Homepage} />
+         <Route path="/album/:albumId" exact component={Albumpage} /> 
+        
+      
+      </Router>
     </div>
   );
 }
