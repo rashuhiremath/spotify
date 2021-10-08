@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
+import { Col, Container, Row } from "react-bootstrap";
 import Sidebar from "./Sidebar";
+import Footer from "./Footer";
 
 const Homepage = () => {
-
-    const [songArray, setSongArray]=useState([])
+  const [songArray, setSongArray] = useState([]);
   const fetchTheSongs = async () => {
     try {
       let response = await fetch(
@@ -11,10 +12,10 @@ const Homepage = () => {
       );
       let data = await response.json();
       if (response.ok) {
-        console.log(data);
-        setSongArray({
-            songsArray : data
-        })
+        console.log("here", data);
+         setSongArray(data.data);
+
+       
       } else {
         console.log("something went wrong");
       }
@@ -23,38 +24,49 @@ const Homepage = () => {
     }
   };
 
-  
-
   useEffect(() => {
     fetchTheSongs();
-  }, []);
+  }, [songArray]);
 
   return (
     <>
-      <Sidebar />;
-      { songArray &&
+      <Sidebar />
+      {console.log(songArray)}
+      
+       
 
-      songArray.map(element => 
+        <Container>
+            <Row>
+            { 
+      songArray.map(song => (
         
-        <div className="card card-morning-3 d-flex m-0 mb-2 mr-auto first-div-card-styles">
-        <div className="d-flex align-items-center">
-          <div className="d-flex align-items-center justify-content-center">
-            <img
-              className
-              src="./assets/img/cover3.jpg"
-              height="78px"
-              alt="Card image cap"
-              style={{ width: "auto", backgroundSize: "contain" }}
-            />
-          </div>
-          <p className="m-0 pl-3 font-weight-bold">Metallica</p>
-        </div>
-      </div>)
+                <Col md={12}>
+                <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 px-1 mb-2">
+  <a href="./Album.html" className="card-link">
+    <div className="card pt-2 rp-card">
+      <img
+        className="recent-ply-card-img ml-3 pl-2"
+        src={song.album.cover_small}
+        alt="Card image cap"
+      />
+      <div className="card-body card-text-paragraph">
+        <p className="pb-0 mb-1">Queen</p>
+        <small>Bohemian Rhapsody</small>
+      </div>
+    </div>
+  </a>
+</div>
+</Col>
+))} 
 
-          
-      }
+                
+            </Row>
+
+        </Container>
+
+        <Footer/> 
       
     </>
-  );
-};
+  )
+}
 export default Homepage;

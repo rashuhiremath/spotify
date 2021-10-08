@@ -254,3 +254,96 @@ div.side-menu-songs-list::-webkit-scrollbar-thumb {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+
+
+/* cards and footer */
+.box .card-deck .card .row .imgbox img {
+  /* height: 60px;
+  width: auto; */
+  background-size: contain;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.first-div-card-styles{
+  width: 15rem; 
+  height: 5rem; 
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgba(82, 79, 79, 0.3) !important;
+  color: #fff;
+}
+div.first-div-card-styles a{
+    color: white;
+}
+div.first-div-card-styles a:hover{
+    text-decoration:none;
+}
+
+
+.first-div-card-styles:hover{
+  transition: all 0.2s ease-out;
+  background-color: rgba(104, 101, 101, 0.5) !important;
+  color: #fff;
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  top: -4px;
+  border: 1px solid #464545;
+}
+  
+.first-div-card-styles:hover:before {
+  transform: scale(2.15);
+}
+
+div.first-div-card-styles img{
+  border-top-left-radius: 5px ;
+  border-bottom-left-radius: 5px ;
+}
+
+
+
+
+
+/* STYLE OF GREETINGS SECTION END */
+/* EVERYTHING BELOW HERE PLEASE RENAME THE CLASSES OR USE A DIFFERENT TYPE OF A SELECTORE */
+/* THE IT IS NOW MESSING UP A LOT OF CODES  */
+
+/* CSS STYLES FOR THE CARDS */
+.card{
+  background-color: rgba(31, 27, 27, 0.4);
+  margin: 5px; 
+  margin-top: 2px;
+  cursor: pointer;
+  overflow: hidden; 
+}
+.card:hover{
+  transition: all 0.2s ease-out;
+  background-color: rgba(104, 101, 101, 0.5) !important;
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  top: -4px;
+  border: 1px solid #464545;
+}
+
+
+footer {
+      padding: 10px 10px 0px 10px;
+      height: calc(100vh - 87vh);
+      font-size: 15px;
+      background-color: #181818;
+      border-top: 1px solid #282828;
+      }
+      
+      .bar{
+      height: 2px;
+      width: 75%;
+      background-color: white;
+      }
+      
+      .bar2{
+      height: 4px;
+      width: 25%;
+      background-color: white
+      }
+
+      #volume {
+          margin-left: -80px;
+      }
