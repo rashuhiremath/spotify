@@ -25,7 +25,7 @@ const Homepage = () => {
 
   useEffect(() => {
     fetchTheSongs();
-  }, [songArray]);
+  }, []);
 
   return (
     <>
@@ -38,7 +38,7 @@ const Homepage = () => {
             <Col xs={6} md={3} className="fetched">
               <div className="card pt-2 rp-card">
 
-               <Link to={`/album/${song.id}`}>  
+               <Link to={`/album/${song.album.id}`}>  
               <img
                   className="recent-ply-card-img ml-3 pl-2"
                   src={song.album.cover_small}

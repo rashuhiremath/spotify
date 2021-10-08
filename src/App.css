@@ -353,3 +353,95 @@ footer {
       .fetched{
         padding-left: 10%;
       }
+
+    /* album page */ 
+    
+
+.container-fluid .row .col-8 .list-unstyled li p{
+  font-size: smaller;
+}
+
+/*------>ALBUM SONGS LIST<------*/
+
+.album-songs .mt-3 .row .col-12 .dot {
+  height: 45px;
+  width: 45px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: inline-block;
+  }
+
+.album-songs .mt-3 .row .col-12 {
+  justify-content: center;
+  align-content: middle;
+  vertical-align: middle;
+  }
+
+.album-songs .mt-3 .row .col-12 .container1 {
+  position: absolute;
+  margin-top: 0%;
+  margin-left: 0%;
+  margin-bottom: 0%;
+  margin-right: 0%;
+  }
+
+.album-songs .mt-3 .row .col-12 .container2 {
+  position: relative;
+  display: inline-block;
+  }
+
+.album-songs .mt-3 .row ul li {
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  align-content: middle;
+  vertical-align: middle;
+  }
+
+.album-songs .mt-3 .row {
+  display: block;
+}
+
+.row-songs .col-10 .row1{
+  color:rgb(255, 255, 255)
+}
+
+.album-songs .mt-3 .row-songs {
+  justify-content: center;
+  align-content: middle;
+  vertical-align: middle;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.album-songs .mt-3 .row-songs .col-10 .row1 {
+  font-weight: bolder;
+}
+
+.album-songs .mt-3 .row-songs .col-10 .row2 {
+  font-size: smaller;
+}
+
+.album-songs .mt-3 hr {
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgb(66, 66, 66);
+  }
+.hashtag {
+  margin-right: -50px;
+}
+
+.clock {
+  margin-left: 50px;
+}
+
+.track-number {
+  margin-right: -50px;
+}
+
+.time {
+  margin-left: 50px;
+}
+
+  /*------><------*/ 
